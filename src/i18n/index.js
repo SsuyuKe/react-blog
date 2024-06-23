@@ -5,6 +5,8 @@ import zh_TW from './locales/zh_TW.json';
 
 import i18n from 'i18next';
 
+const language = localStorage.getItem('language')
+
 const resources = {
   en_US: {
     translation: en_US,
@@ -16,7 +18,7 @@ const resources = {
 i18n.use(initReactI18next).init({
   resources,
   fallbackLng: 'en_US',
-  lng: 'zh_TW',
+  lng: language ? JSON.parse(language) : 'zh_TW',
   interpolation: {
     escapeValue: false,
   },

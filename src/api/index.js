@@ -10,7 +10,7 @@ instance.interceptors.request.use((config) => {
 })
 
 instance.interceptors.response.use((res) => {
-  return res.data
+  return res
 }, (err) => {
   return console.error(err)
 });

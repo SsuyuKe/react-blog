@@ -1,10 +1,14 @@
 import { createBrowserRouter } from "react-router-dom";
-import { Home, Post, Collect, Search, CreatePost, EditPost, NotFound } from "@/pages";
+import { Home, Login, Post, Collect, Search, CreatePost, EditPost, NotFound } from "@/pages";
 
 const router = createBrowserRouter([
   {
     path: '/',
     element: <Home />
+  },
+  {
+    path: '/login',
+    element: <Login />
   },
   {
     path: '/post/:id',

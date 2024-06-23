@@ -1,8 +1,14 @@
 @import './reset.css';
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 * {
   box-sizing: border-box;
+}
+
+.darkMode {
+  background-color: black;
+  color: white;
 }
